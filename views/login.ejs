@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+<section class="login-main">
+  <div class="form-box">
+    <form action="/login" method="post">
+      <h3>Login Form</h3>
+      <label for="username">USERNAME:</label>
+      <input
+        name="username"
+        type="text"
+        placeholder="Enter Username"
+        required
+      />
+      <br />
+      <label for="password">PASSWORD:</label>
+      <input
+        name="password"
+        type="password"
+        placeholder="Enter Password"
+        autocomplete="off"
+        required
+      />
+      <br />
+      <button class="btn" type="submit">LOGIN</button>
+    </form>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

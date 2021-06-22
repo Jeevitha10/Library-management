@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+
+<section class="add-main">
+  <div class="logout-icon">
+    <a href="/home"><i class="fas fa-home"></i></a>
+  </div>
+  <div class="add-box">
+    <form action="/addbook" method="post">
+      <label>BOOK NAME:</label>
+      <input name="bookname" type="text" placeholder="Enter Book Name" /> <br />
+      <label>AUTHOR:</label>
+      <input name="author" type="text" placeholder="Enter Author Name" />
+      <br />
+      <label>PRICE:</label>
+      <input name="price" type="number" placeholder="Enter Price" /> <br />
+      <label>ISBN NO:</label>
+      <input name="isbn" type="number" placeholder="Enter ISBN" /> <br />
+      <label>EDITION:</label>
+      <input name="edition" type="number" placeholder="Enter Edition" /> <br />
+      <label>NO OF PAGES:</label>
+      <input name="pages" type="number" placeholder="Enter Number" />
+      <br />
+      <button class="btn" type="submit">ADD BOOK</button>
+    </form>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

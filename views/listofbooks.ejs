@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+
+<section class="list-of-books">
+  <div class="logout-icon">
+    <a href="/home"><i class="fas fa-home"></i></a>
+  </div>
+  <table>
+    <tr>
+      <th>BOOK NAME</th>
+      <th>AUTHOR</th>
+      <th>PRICE</th>
+      <th class="no-mobile">ISBN NO</th>
+      <th class="no-mobile">EDITION</th>
+      <th class="no-mobile">NUMBER OF PAGES</th>
+    </tr>
+    <% booklist.forEach(book => { %>
+    <tr>
+      <td><%= book.bookname%></td>
+      <td><%= book.author %></td>
+      <td>$ <%= book.price %></td>
+      <td class="no-mobile"><%= book.isbn %></td>
+      <td class="no-mobile"><%= book.edition %></td>
+      <td class="no-mobile"><%= book.pages %></td>
+    </tr>
+    <% }) %>
+  </table>
+</section>
+
+<%- include('partials/footer') %>
